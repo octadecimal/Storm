@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    /* {
+      "label": "core:build",
+      "type": "dotnet",
+      "task": "build",
+      "problemMatcher": [],
+      "presentation": {
+        // "reveal": "never",
+      }
+    }, */
+    {
+      "label": "core:build",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "Storm.Core"
+      ],
+      "presentation": {
+        "reveal": "never",
+      }
+    },
+    {
+      "label": "core:copy",
+      "dependsOn": "core:build",
+      "type": "shell",
+      "command": "cp",
+      "args": [
+        "${workspaceFolder}/Storm.Core/bin/Debug/netstandard2.1/Storm.Core.dll",
+        "${workspaceFolder}/Storm.Client/Assets/Plugins/Storm.Core.dll"
+      ],
+      "presentation": {
+        "reveal": "never",
+      }
+    },
+    {
+      "label": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "core:build",
+        "core:copy"
+      ],
+      "presentation": {
+        // "reveal": "never",
+      }
+    }
+  ]
+}

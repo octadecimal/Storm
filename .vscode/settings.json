@@ -1,0 +1,37 @@
+{
+  "files.associations": {
+    "*.cs": "csharp",
+    "*.asmdef": "json"
+  },
+  "editor.codeLens": true,
+  "csharp.showReferencesCodeLens": true,
+  "csharp.showTestsCodeLens": true,
+  "omnisharp.useGlobalMono": "always",
+  "dotnet.defaultSolution": "Storm.sln",
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/CVS": false,
+    "**/.DS_Store": false,
+    "**/Thumbs.db": false,
+    ".gitignore": false,
+    "**/*.csproj": false,
+    "**/bin": false,
+    "**/obj": false,
+    "Storm.sln": false,
+    "**/.vscode": false,
+    "Storm.Client/Library": false,
+    "Storm.Client/Packages": false,
+    "Storm.Client/ProjectSettings": false,
+    "Storm.Client/Logs": false,
+    "Storm.Client/Temp": false,
+    "Storm.Client/UserSettings": false,
+    "Storm.Client/Storm.Client.sln": false,
+    "Storm.Client\\Assets/Scenes": false,
+    "Storm.Client\\Assets/Settings": false,
+    "**/*.meta": false,
+    "**/README.md": false
+  },
+  "explorerExclude.backup": {}
+}
